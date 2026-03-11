@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+  <title>今日文档 | Blog</title>
+
+</head>
+<body>
+  <div class="container one-column page-post-detail">
+    <div id="content" class="main-content-wrap">
+      <article itemscope itemtype="http://schema.org/Article" class="post article-type-normal">
+        <header class="post-header">
+          <h1 itemprop="name headline" class="post-title">今日文档</h1>
+          <div class="post-meta">
+            <span class="post-time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2026-03-11T00:00:00+08:00">2026-03-11</time>
+            </span>
+          </div>
+        </header>
+        <div class="post-body" itemprop="articleBody">
+          <h2>Skills 介绍</h2>
+          <p>本文档介绍核心技能及其使用用例。</p>
+          
+          <h3>1. 编程技能</h3>
+          <ul>
+            <li><strong>Python:</strong> 数据处理、自动化脚本、Web开发</li>
+            <li><strong>JavaScript:</strong> 前端交互、Node.js后端服务</li>
+            <li><strong>Java:</strong> 企业级应用、Android开发</li>
+          </ul>
+          
+          <h3>2. 使用用例</h3>
+          <h4>用例一：数据自动化处理</h4>
+          <p>使用 Python 的 pandas 库进行数据清洗和分析，自动化生成报表。</p>
+          <pre><code>import pandas as pd
+df = pd.read_csv('data.csv')
+result = df.groupby('category').sum()
+result.to_excel('report.xlsx')</code></pre>
+          
+          <h4>用例二：Web应用开发</h4>
+          <p>使用 JavaScript 和 React 构建交互式用户界面，实现动态数据展示。</p>
+          <pre><code>function DataDisplay({ data }) {
+  return (
+    &lt;div&gt;
+      {data.map(item => &lt;p key={item.id}&gt;{item.name}&lt;/p&gt;)}
+    &lt;/div&gt;
+  );
+}</code></pre>
+          
+          <h4>用例三：API服务集成</h4>
+          <p>通过 RESTful API 实现系统间的数据交换和功能调用。</p>
+          <pre><code>fetch('/api/users')
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
+          
+          <h3>3. 最佳实践</h3>
+          <ul>
+            <li>代码复用：提取公共逻辑为函数或模块</li>
+            <li>版本控制：使用 Git 管理代码变更</li>
+            <li>文档编写：保持代码注释和文档的更新</li>
+            <li>测试驱动：编写单元测试确保代码质量</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
